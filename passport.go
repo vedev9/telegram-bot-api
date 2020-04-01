@@ -59,6 +59,9 @@ type (
 	// 10MB.
 	PassportFile struct {
 		// Unique identifier for this file
+		FileUniqueID string `json:"file_unique_id"`
+
+		// Identifier for this file, which can be used to download or reuse the file
 		FileID string `json:"file_id"`
 
 		// File size
